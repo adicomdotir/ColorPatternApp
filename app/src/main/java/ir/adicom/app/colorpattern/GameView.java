@@ -32,22 +32,22 @@ public class GameView extends ImageView {
     public GameView(Context context) {
         super(context);
         this.context = context;
-        init();
+        // init();
     }
 
     public GameView(Context context, AttributeSet attrs) {
         super(context, attrs);
         this.context = context;
-        init();
+        // init();
     }
 
     public GameView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         this.context = context;
-        init();
+        // init();
     }
 
-    private void init() {
+    public void init() {
         setColor();
         final Handler mainHandler = new Handler(context.getMainLooper());
         final Runnable myRunnable = new Runnable() {
